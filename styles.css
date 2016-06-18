@@ -1,0 +1,41 @@
+body {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 48px;
+}
+
+
+
+form {
+	width: 306px;
+	border-radius: 24px;
+	border: 1px solid #888888;
+	background-color: #F2F0F1;
+	padding: 24px;
+	margin: auto;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+input[type=text] {
+	margin: 24px 0px 24px 0px;
+	padding: 6px;
+	height: 48px;
+	width: 100%;
+	font-size: 24px;
+	border-radius: 6px;
+	background-color: #B3B5A7;
+}
+
+input[type=button] {
+	width: 48px;
+	height: 48px;
+	margin: 6px;
+	border-radius: 100%;
+	background-color: #EAE8E9;
+	border: 2px solid #fff;
+	box-shadow: 1px 1px 2px #888888;
+}
+
+#res {
+	background-color: #E4C42E;
+}

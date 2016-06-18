@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<meta charset="utf-8">
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="calc-container">
+					<form name="calculator">
+						calc2000<br>
+						<input type="text" name="answer">
+						<br>
+
+						<input type="button" value=" AC " onclick="calculator.answer.value = ''">
+						<input type="button" value=" CE " onclick="calculator.answer.value = calculator.answer.value.slice(0,-1)">
+						<input type="button" value=" % " onclick="calculator.answer.value += ' % '">
+						<input type="button" value=" &#247; " onclick="calculator.answer.value += ' / '">
+						<br>
+
+						<input type="button" value=" 7 " onclick="calculator.answer.value += '7'">
+						<input type="button" value=" 8 " onclick="calculator.answer.value += '8'">
+						<input type="button" value=" 9 " onclick="calculator.answer.value += '9'">
+						<input type="button" value=" &#215; " onclick="calculator.answer.value += ' * '">
+						<br>
+
+						<input type="button" value=" 4 " onclick="calculator.answer.value += '4'">
+						<input type="button" value=" 5 " onclick="calculator.answer.value += '5'">
+						<input type="button" value=" 6 " onclick="calculator.answer.value += '6'">
+						<input type="button" value=" - " onclick="calculator.answer.value += ' - '">
+						<br>
+
+						<input type="button" value=" 1 " onclick="calculator.answer.value += '1'">
+						<input type="button" value=" 2 " onclick="calculator.answer.value += '2'">
+						<input type="button" value=" 3 " onclick="calculator.answer.value += '3'">
+						<input type="button" value=" + " onclick="calculator.answer.value += ' + '">
+						<br>
+
+						<input type="button" value=" . " onclick="calculator.answer.value += '.'">
+						<input type="button" value=" 0 " onclick="calculator.answer.value += '0'">
+						<input type="button" value=" ( - ) " onclick="calculator.answer.value += '-'">				
+						<input type="button" id="res" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)">
+						<br>
+
+					</form>
+				</div>
+					
+			</div>
+				
+		</div>
+	</body>
+</html>
